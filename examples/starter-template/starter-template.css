@@ -1,0 +1,18 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+/* Header
+=================================================================== */
+.navbar-brand {
+	height: 50px;
+	width: 170px;
+}
+/* TN logo resize */
+.navbar-brand img {
+	height: 30px;
+}

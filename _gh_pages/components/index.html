@@ -21,6 +21,9 @@
 <link href="../sabre/docs.css" rel="stylesheet">
 <link href="../docs-assets/css/pygments-manni.css" rel="stylesheet">
 
+<!-- Components extras -->
+<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
 <!-- Sabre core CSS -->
 <link href="../sabre/sabre.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -99,6 +102,14 @@
             <ul class="nav bs-sidenav">
               
                 <li>
+  <a href="#fontawesome">Font Awesome</a>
+  <ul class="nav">
+    <li><a href="#fontawesome-icons">Available icons</a></li>
+    <li><a href="#fontawesome-getting-started">Getting Started</a></li>
+    <li><a href="#fontawesome-examples">Examples</a></li>
+  </ul>
+</li>
+<li>
   <a href="#glyphicons">Glyphicons</a>
   <ul class="nav">
     <li><a href="#glyphicons-glyphs">Available glyphs</a></li>
@@ -241,11 +252,65 @@
           </div>
         </div>
         <div class="col-md-9" role="main">
-            <!-- Glyphicons
+            <!-- Font Awesome
   ================================================== -->
   <div class="bs-docs-section">
     <div class="page-header">
-      <h1 id="glyphicons">Glyphicons 2</h1>
+      <h1 id="fontawesome">Font Awesome <small class="label label-default">Non-core</small></h1>
+    </div>
+    <h2 id="fontawesome-icons">Available Icons</h2>
+    <p><a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.</p> 
+    <h2 id="fontawesome-getting-started">Getting Started</h2>
+    <p>Setting up can be as simple as adding two lines of code to your website, or you can be a pro and customize the LESS!</p>
+    <p><a class="btn btn-lg btn-primary" href="http://fortawesome.github.io/Font-Awesome/get-started/">Get Started</a></p>
+    <h2 id="fontawesome-examples">Examples</h2>
+    <p>Place Font Awesome icons just about anywhere with the <span class="highlight fa"><code class="fontawesome-code">&lt;i&gt;</code></span> tag.</p>
+    <div class="bs-example">
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default"><i class="icon-align-left"></i></button>
+          <button type="button" class="btn btn-default"><i class="icon-align-center"></i></button>
+          <button type="button" class="btn btn-default"><i class="icon-align-right"></i></button>
+          <button type="button" class="btn btn-default"><i class="icon-align-justify"></i></button>
+        </div>
+      </div>
+      <div class="btn-toolbar">
+        <button type="button" class="btn btn-default btn-lg"><i class="icon-star"></i> Star</button>
+        <button type="button" class="btn btn-default"><i class="icon-star"></i> Star</button>
+        <button type="button" class="btn btn-default btn-sm"><i class="icon-star"></i> Star</button>
+        <button type="button" class="btn btn-default btn-xs"><i class="icon-star"></i> Star</button>
+      </div>                  
+    </div>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-toolbar&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-group&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon-align-left&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon-align-center&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon-align-right&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon-align-justify&quot;</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;btn-toolbar&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default btn-lg&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon-star&quot;</span><span class="nt">&gt;&lt;/i&gt;</span> Star
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>                  
+</code></pre></div>
+  </div>
+
+  <!-- Glyphicons
+  ================================================== -->
+  <div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="glyphicons">Glyphicons</h1>
     </div>
 
     <h2 id="glyphicons-glyphs">Available glyphs</h2>

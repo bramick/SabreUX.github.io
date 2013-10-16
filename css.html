@@ -1916,32 +1916,576 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 
     <div class="bs-example">
       <form role="form">
-        <div class="form-group has-success">
-          <label class="control-label" for="inputSuccess">Input with success</label>
-          <input type="text" class="form-control" id="inputSuccess">
+        <div class="form-group has-required">
+          <label class="control-label" for="inputRequired">Label
+            <div class="input-group">
+              <input type="text" placeholder="Required input" class="form-control" id="inputRequired" required>
+              <i class="text icon-asterisk"></i>
+            </div>
+          </label>
         </div>
-        <div class="form-group has-warning">
-          <label class="control-label" for="inputWarning">Input with warning</label>
-          <input type="text" class="form-control" id="inputWarning">
+        <div class="form-group has-success">
+          <label class="control-label" for="inputSuccess">Label
+            <div class="input-group">
+              <input type="text" placeholder="Input with success" class="form-control" id="inputSuccess">
+              <i class="text icon-ok"></i>
+            </div>
+          </label>
+        </div>
+        <div class="form-group has-warning" style="margin-bottom: 10px;">
+          <label class="control-label" for="inputWarning">Label
+            <div class="input-group">
+              <input type="text" placeholder="Input with warning" class="form-control" id="inputWarning">
+              <i class="text icon-warning-sign"></i>
+            </div>
+          </label>
+        </div>    
+        <div class="form-group has-error">
+          <label class="control-label" for="inputError">Label
+            <div class="tooltip fade right in" style=" ">
+              <div class="tooltip-arrow"></div>
+              <div class="tooltip-inner">Tooltip error message</div>
+            </div>
+            <div class="input-group">
+              <input type="text" placeholder="Input with error" class="form-control" id="inputError">
+              <i class="text icon-">!</i>
+            </div>
+          </label>
+        </div>
+        <div class="form-group has-required">
+          <label for="selectMenu">Select menu <i class="icon-asterisk"></i></label>
+          <select class="form-control" name="selectMenu">
+            <option value="" selected>-- Select --</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="form-group has-success">
+          <label for="selectMenu">Select menu <i class="icon-ok"></i></label>
+          <select class="form-control" name="selectMenu">
+            <option value="" selected>-- Select --</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="form-group has-warning" style="margin-bottom: 10px;">
+          <label for="selectMenu">Select menu <i class="icon-warning-sign"></i></label>
+          <select class="form-control" name="selectMenu">
+            <option value="" selected>-- Select --</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
         </div>
         <div class="form-group has-error">
-          <label class="control-label" for="inputError">Input with error</label>
-          <input type="text" class="form-control" id="inputError">
+          <label for="selectMenu">Select menu <i class="icon-">!</i>
+              <div class="tooltip fade right in" style=" ">
+                <div class="tooltip-arrow"></div>
+                <div class="tooltip-inner">Tooltip error message</div>
+              </div>
+              <select class="form-control" name="selectMenu">
+                <option value="" selected>-- Select --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+          </label>
+        </div>
+        <div class="form-group has-required">
+          <label for="textarea">Textarea
+            <div class="input-group">
+                <textarea class="form-control" rows="3"></textarea>
+                <i class="text icon-asterisk"></i>
+            </div>
+          </label>
+        </div>
+        <div class="form-group has-success">
+          <label for="textarea">Textarea
+            <div class="input-group">
+                <textarea class="form-control" rows="3"></textarea>
+                <i class="text icon-ok"></i>
+            </div>
+          </label>
+        </div>
+        <div class="form-group has-warning" style="margin-bottom: 10px;">
+          <label for="textarea">Textarea
+            <div class="input-group">
+                <textarea class="form-control" rows="3"></textarea>
+                <i class="text icon-warning-sign"></i>
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group has-error">
+          <label for="textarea">Textarea
+            <div class="tooltip fade right in" style=" ">
+              <div class="tooltip-arrow"></div>
+              <div class="tooltip-inner">Tooltip error message</div>
+            </div>  
+            <div class="input-group">
+                <textarea class="form-control" rows="3"></textarea>
+                <i class="text icon-">!</i>
+            </div>
+          </label>
+        </div>
+
+        <div class="form-group has-required">
+          <label for="checkbox">Checkboxes <i class="icon-asterisk"></i></label>
+          <div class="input-group">
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 1
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 2
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 3
+            </label>
+          </div>
+        </div>
+        <div class="form-group has-success">
+          <label for="checkbox">Checkboxes <i class="icon-ok"></i></label>
+          <div class="input-group">
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 1
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 2
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 3
+            </label>
+          </div>
+        </div>
+        <div class="form-group has-warning" style="margin-bottom: 10px;">
+          <label for="checkbox">Checkboxes <i class="icon-warning-sign"></i></label>
+          <div class="input-group">
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 1
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 2
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox">Option 3
+            </label>
+          </div>
+        </div>
+        <div class="form-group has-error">
+          <label for="checkbox" data-toggle=tooltip>Checkboxes <i class="icon-">!</i>
+            <div class="tooltip fade right in" style=" ">
+              <div class="tooltip-arrow"></div>
+              <div class="tooltip-inner">Tooltip error message</div>
+            </div>  
+            <div class="input-group"> 
+              <label class="checkbox-inline">
+                <input type="checkbox">Option 1
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox">Option 2
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox">Option 3
+              </label>
+            </div>
+          </label>
+        </div>
+        <div class="form-group has-required">
+          <label for="radio">Radio buttons <i class="icon-asterisk"></i></label>
+          <div class="input-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Radio - Option one 
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+                Radio - Option two
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group has-success">
+          <label for="radio">Radio buttons <i class="icon-ok"></i></label>
+          <div class="input-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Radio - Option one 
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+                Radio - Option two
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group has-warning" style="margin-bottom: 10px;">
+          <label for="radio">Radio buttons <i class="icon-warning-sign"></i></label>
+          <div class="input-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Radio - Option one 
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+                Radio - Option two
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group has-error">
+          <label for="radio">Radio buttons <i class="icon-">!</i>
+
+            <div class="tooltip fade right in" style=" ">
+              <div class="tooltip-arrow"></div>
+              <div class="tooltip-inner">Tooltip error message</div>
+            </div> 
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Radio - Option one 
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+                Radio - Option two
+              </label>
+            </div>
+          </label>
+        </div>
+        <div class="form-group has-required">
+          <label for="inputFile">File input <i class="icon-asterisk"></i>
+            <input type="file" id="inputFile">
+          </label>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group has-success">
+          <label for="inputFile">File input <i class="icon-ok"></i>
+            <input type="file" id="inputFile">
+          </label>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group has-warning" style="margin-bottom:10px;">
+          <label for="inputFile">File input <i class="icon-warning-sign"></i>
+            <input type="file" id="inputFile">
+          </label>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group has-error">
+          <label for="inputFile">File input <i class="icon-">!</i>
+            <div class="tooltip fade right in" style=" ">
+              <div class="tooltip-arrow"></div>
+              <div class="tooltip-inner">Tooltip error message</div>
+            </div> 
+            <input type="file" id="inputFile">
+          </label>
+          <p class="help-block">Example block-level help text here.</p>
         </div>
       </form>
     </div><!-- /.bs-example -->
 {% highlight html %}
-<div class="form-group has-success">
-  <label class="control-label" for="inputSuccess">Input with success</label>
-  <input type="text" class="form-control" id="inputSuccess">
+<div class="form-group has-required">
+  <label class="control-label" for="inputRequired">Label
+    <div class="input-group">
+      <input type="text" placeholder="Required input" class="form-control" id="inputRequired" required>
+      <i class="text icon-asterisk"></i>
+    </div>
+  </label>
 </div>
-<div class="form-group has-warning">
-  <label class="control-label" for="inputWarning">Input with warning</label>
-  <input type="text" class="form-control" id="inputWarning">
+<div class="form-group has-success">
+  <label class="control-label" for="inputSuccess">Label
+    <div class="input-group">
+      <input type="text" placeholder="Input with success" class="form-control" id="inputSuccess">
+      <i class="text icon-ok"></i>
+    </div>
+  </label>
+</div>
+<div class="form-group has-warning" style="margin-bottom: 10px;">
+  <label class="control-label" for="inputWarning">Label
+    <div class="input-group">
+      <input type="text" placeholder="Input with warning" class="form-control" id="inputWarning">
+      <i class="text icon-warning-sign"></i>
+    </div>
+  </label>
+</div>    
+<div class="form-group has-error">
+  <label class="control-label" for="inputError">Label
+    <div class="tooltip fade right in" style=" ">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">Tooltip error message</div>
+    </div>
+    <div class="input-group">
+      <input type="text" placeholder="Input with error" class="form-control" id="inputError">
+      <i class="text icon-">!</i>
+    </div>
+  </label>
+</div>
+<div class="form-group has-required">
+  <label for="selectMenu">Select menu <i class="icon-asterisk"></i></label>
+  <select class="form-control" name="selectMenu">
+    <option value="" selected>-- Select --</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</div>
+<div class="form-group has-success">
+  <label for="selectMenu">Select menu <i class="icon-ok"></i></label>
+  <select class="form-control" name="selectMenu">
+    <option value="" selected>-- Select --</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</div>
+<div class="form-group has-warning" style="margin-bottom: 10px;">
+  <label for="selectMenu">Select menu <i class="icon-warning-sign"></i></label>
+  <select class="form-control" name="selectMenu">
+    <option value="" selected>-- Select --</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
 </div>
 <div class="form-group has-error">
-  <label class="control-label" for="inputError">Input with error</label>
-  <input type="text" class="form-control" id="inputError">
+  <label for="selectMenu">Select menu <i class="icon-">!</i>
+      <div class="tooltip fade right in" style=" ">
+        <div class="tooltip-arrow"></div>
+        <div class="tooltip-inner">Tooltip error message</div>
+      </div>
+      <select class="form-control" name="selectMenu">
+        <option value="" selected>-- Select --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+  </label>
+</div>
+<div class="form-group has-required">
+  <label for="textarea">Textarea
+    <div class="input-group">
+        <textarea class="form-control" rows="3"></textarea>
+        <i class="text icon-asterisk"></i>
+    </div>
+  </label>
+</div>
+<div class="form-group has-success">
+  <label for="textarea">Textarea
+    <div class="input-group">
+        <textarea class="form-control" rows="3"></textarea>
+        <i class="text icon-ok"></i>
+    </div>
+  </label>
+</div>
+<div class="form-group has-warning" style="margin-bottom: 10px;">
+  <label for="textarea">Textarea
+    <div class="input-group">
+        <textarea class="form-control" rows="3"></textarea>
+        <i class="text icon-warning-sign"></i>
+    </div>
+  </label>
+</div>
+
+<div class="form-group has-error">
+  <label for="textarea">Textarea
+    <div class="tooltip fade right in" style=" ">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">Tooltip error message</div>
+    </div>  
+    <div class="input-group">
+        <textarea class="form-control" rows="3"></textarea>
+        <i class="text icon-">!</i>
+    </div>
+  </label>
+</div>
+
+<div class="form-group has-required">
+  <label for="checkbox">Checkboxes <i class="icon-asterisk"></i></label>
+  <div class="input-group">
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 3
+    </label>
+  </div>
+</div>
+<div class="form-group has-success">
+  <label for="checkbox">Checkboxes <i class="icon-ok"></i></label>
+  <div class="input-group">
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 3
+    </label>
+  </div>
+</div>
+<div class="form-group has-warning" style="margin-bottom: 10px;">
+  <label for="checkbox">Checkboxes <i class="icon-warning-sign"></i></label>
+  <div class="input-group">
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox">Option 3
+    </label>
+  </div>
+</div>
+<div class="form-group has-error">
+  <label for="checkbox" data-toggle=tooltip>Checkboxes <i class="icon-">!</i>
+    <div class="tooltip fade right in" style=" ">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">Tooltip error message</div>
+    </div>  
+    <div class="input-group"> 
+      <label class="checkbox-inline">
+        <input type="checkbox">Option 1
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox">Option 2
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox">Option 3
+      </label>
+    </div>
+  </label>
+</div>
+<div class="form-group has-required">
+  <label for="radio">Radio buttons <i class="icon-asterisk"></i></label>
+  <div class="input-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+        Radio - Option one 
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+        Radio - Option two
+      </label>
+    </div>
+  </div>
+</div>
+<div class="form-group has-success">
+  <label for="radio">Radio buttons <i class="icon-ok"></i></label>
+  <div class="input-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+        Radio - Option one 
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+        Radio - Option two
+      </label>
+    </div>
+  </div>
+</div>
+<div class="form-group has-warning" style="margin-bottom: 10px;">
+  <label for="radio">Radio buttons <i class="icon-warning-sign"></i></label>
+  <div class="input-group">
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+        Radio - Option one 
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+        Radio - Option two
+      </label>
+    </div>
+  </div>
+</div>
+<div class="form-group has-error">
+  <label for="radio">Radio buttons <i class="icon-">!</i>
+
+    <div class="tooltip fade right in" style=" ">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">Tooltip error message</div>
+    </div> 
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+        Radio - Option one 
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" >
+        Radio - Option two
+      </label>
+    </div>
+  </label>
+</div>
+<div class="form-group has-required">
+  <label for="inputFile">File input <i class="icon-asterisk"></i>
+    <input type="file" id="inputFile">
+  </label>
+  <p class="help-block">Example block-level help text here.</p>
+</div>
+<div class="form-group has-success">
+  <label for="inputFile">File input <i class="icon-ok"></i>
+    <input type="file" id="inputFile">
+  </label>
+  <p class="help-block">Example block-level help text here.</p>
+</div>
+<div class="form-group has-warning" style="margin-bottom:10px;">
+  <label for="inputFile">File input <i class="icon-warning-sign"></i>
+    <input type="file" id="inputFile">
+  </label>
+  <p class="help-block">Example block-level help text here.</p>
+</div>
+<div class="form-group has-error">
+  <label for="inputFile">File input <i class="icon-">!</i>
+    <div class="tooltip fade right in" style=" ">
+      <div class="tooltip-arrow"></div>
+      <div class="tooltip-inner">Tooltip error message</div>
+    </div> 
+    <input type="file" id="inputFile">
+  </label>
+  <p class="help-block">Example block-level help text here.</p>
 </div>
 {% endhighlight %}
 

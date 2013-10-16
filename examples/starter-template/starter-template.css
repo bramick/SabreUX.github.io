@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 
-/* Header
+/* Header - Default 50px height header
 =================================================================== */
 .navbar-brand {
 	height: 50px;
@@ -15,4 +15,9 @@ body {
 /* TN logo resize */
 .navbar-brand img {
 	height: 30px;
+}
+/* Overwrite sabre.css */
+.navbar-nav > li > a {
+	padding-top: 15px;
+	padding-bottom: 15px;
 }

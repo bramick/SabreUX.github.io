@@ -1,18 +1,21 @@
 @charset "UTF-8";
 /* CSS Document */
 
-
-h1, h2, h3, h4, h5, h6, 
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top:1em;
   margin-bottom:0.1em;
 }
+
 h1 {font-size:2.3em;}
 h2 {font-size:1.8em;}
 h3 {font-size:1.5em;}
 h4 {font-size:1.3em;}
 h5 {font-size:1.2em;}
 h6 {font-size:1.1em;}
+
+h1 small, h2 small, h3 small, h1 small.label {
+  font-size: 65%;
+}
 
 .btn {
     cursor: pointer;
@@ -106,7 +109,6 @@ a:focus {
 
 /* Navbar
 =================================================================== */
-
 
 .navbar-nav > li > a {
   padding-top: 20px;
@@ -213,8 +215,6 @@ h1.navbar-title {
   background-color: transparent;
   border: 1px solid #ccc;
 }
-
-
 
 
 /*Dropdowns*/

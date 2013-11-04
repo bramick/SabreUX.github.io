@@ -1,6 +1,6 @@
 // Core variables and mixins 
 @import "sabre_variables.less";
-@import "../less/mixins.less";
+@import "sabre_mixins.less";
 
 // Reset
 @import "../less/normalize.less";
@@ -8,12 +8,129 @@
 
 // Core CSS
 @import "../less/scaffolding.less";
+a {
+  .transition(0.5s);
+
+  &:hover,
+  &:focus {
+    .transition(0.5s);
+  }
+
+  &:focus {
+    .tab-focus();
+  }
+}
+
+
 @import "../less/type.less";
+h1 small.label { 
+  font-size: 65%; 
+}
+
+.page-header {
+  margin: 0 0 @line-height-computed;
+}
+
 @import "../less/code.less";
 @import "../less/grid.less";
 @import "../less/tables.less";
 @import "../less/forms.less";
 @import "../less/buttons.less";
+
+// Base styles
+// --------------------------------------------------
+.btn {
+  padding: @padding-base-vertical @padding-base-horizontal @padding-base-vertical + 1;
+  line-height: 1em;
+  border-radius: @border-radius-base;
+  .box-shadow(@shadow: inset 0em -0.2rem 0em rgba(0,0,0,0.1));
+  .user-select(none);
+  .box-sizing(none);
+  .transition(all .1s ease);
+
+  &:focus {
+    outline-color: rgba(0, 0, 0, 0.4);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    -webkit-box-shadow: 0em -0.2rem 0em rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0em -0.2rem 0em rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0em -0.2rem 0em rgba(0, 0, 0, 0.3) inset;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  .box-sizing(border-box);
+  }
+
+  &:active,
+  &.active {
+    .box-shadow(none);
+    position: relative;
+    top: 1px;
+  }
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  border:1px solid @btn-default-border;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color:#777;
+    text-shadow: #FFF 0px 1px 0px;
+    color: rgba(0, 0, 0, 0.8);
+    border-color: #adadad;
+  }
+
+  &.caret {
+    border-top-color:#666;
+  }
+}
+
+.open .dropdown-toggle.btn-default {
+  color: rgba(0, 0, 0, 0.8);
+  border-color: #adadad;
+}
+
+.btn-primary {
+  color: #FFF;
+  background-color: #0066B5;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open .dropdown-toggle& {
+    background-color: #00589c;
+  }
+}
+
+// Link buttons
+// -------------------------
+.btn-link {
+  .box-shadow(none);
+  .box-sizing(none);
+}
+.btn-link {
+  &:focus,
+  &:hover {
+    .box-shadow(none);
+  }
+}
+
+// Button Sizes
+// --------------------------------------------------
+.btn-sm,
+.btn-xs {
+  line-height: @line-height-large;
+}
 
 // Components
 @import "../less/component-animations.less";
@@ -22,7 +139,56 @@
 @import "../less/button-groups.less";
 @import "../less/input-groups.less";
 @import "../less/navs.less";
+
+
 @import "../less/navbar.less";
+// Navbars
+// --------------------------------------------------
+.navbar-brand {
+  color:@navbar-inverse-brand-hover-color;
+  background:url(/sabre/img/headerSlice.png) top right no-repeat;
+  height:60px;
+  padding:12px 32px 12px 18px;
+  width:200px;
+}
+.navbar-nav > li > a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar-fixed-top {
+  border-bottom:#E50000 3px solid;
+}
+
+// Alternate navbars
+// --------------------------------------------------
+.navbar-default {
+  .navbar-brand {
+  color: @navbar-inverse-brand-hover-color;
+  }
+}
+.navbar-inverse {
+  .navbar-brand {
+  color: @navbar-inverse-brand-hover-color;
+  }
+}
+
+// Sabre navbar
+// --------------------------------------------------
+.navbar-brand img {
+  height:36px;
+}
+h1.navbar-title {
+  font-size: 21px;
+  height: 40px;
+  white-space: nowrap;
+  font-weight: 100;
+  color: #CCC;
+  float: left;
+  margin-top: 18px;
+  margin-left: 18px;
+  letter-spacing: 2px;
+}
+
 @import "../less/breadcrumbs.less";
 @import "../less/pagination.less";
 @import "../less/pager.less";
@@ -49,4 +215,4 @@
 @import "../less/responsive-utilities.less";
 
 // Sabre Custom CSS
-@import "sabre.css";
+//@import "../sabre.css";

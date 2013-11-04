@@ -6,18 +6,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom:0.1em;
 }
 
-h1 {font-size:2.3em;}
+/*h1 {font-size:2.3em;}
 h2 {font-size:1.8em;}
 h3 {font-size:1.5em;}
 h4 {font-size:1.3em;}
 h5 {font-size:1.2em;}
-h6 {font-size:1.1em;}
+h6 {font-size:1.0em;}*/
 
-h1 small, h2 small, h3 small, h1 small.label {
+/*h1 small, h2 small, h3 small, h1 small.label {
   font-size: 65%;
-}
+}*/
 
-.btn {
+/*.btn {
     cursor: pointer;
     line-height: 1;
     -webkit-box-shadow: 0em -0.2rem 0em rgba(0, 0, 0, 0.1) inset;
@@ -39,24 +39,24 @@ h1 small, h2 small, h3 small, h1 small.label {
   -o-transition: all .1s ease;
   transition: all .1s ease;
 
-}
+}*/
 
 
-.btn-primary {
+/*.btn-primary {
     background-color: #0066B5;
     color: #FFF;
 }
 
 .btn-primary:hover {
 background-color: #00589c;
-}
+}*/
 
-.btn-link{
-    box-shadow:none;
-    box-sizing:none;
-}
+/*.btn-link{
+  box-shadow:none;
+  box-sizing:none;
+}*/
 
-.btn-lg {
+/*.btn-lg {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33;
@@ -109,7 +109,7 @@ a:focus {
 
 /* Navbar
 =================================================================== */
-
+/*
 .navbar-nav > li > a {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -117,11 +117,11 @@ a:focus {
 
 .navbar-inverse {
   background-color:#111;
-  border:0;
+  border:none;
   border-bottom:#E50000 3px solid;
-}
+}*/
 
-.navbar-inverse .navbar-brand {
+/*.navbar-inverse .navbar-brand {
   color:#dedede;
   padding:12px 32px 12px 18px;
   background:url(img/headerSlice.png) top right no-repeat;
@@ -129,12 +129,12 @@ a:focus {
 
 .navbar-brand {
   font-weight: normal;
-  height: 60px;
-  width: 200px;
+  /*height: 60px;
+  /*width: 200px;
 }
-
-.navbar-brand span {display: none;}
-
+*/
+/*.navbar-brand span {display: none;}
+*/
 
 .bs-docs-home .navbar {
     top: 0;
@@ -143,11 +143,11 @@ a:focus {
     z-index: 10;
 }
 
-
+/*
 .navbar-brand img {
   height:36px;
 }
-
+*/
 .bs-docs-home .navbar {
     -webkit-animation: fade-in-navbar 1.5s;
     -moz-animation: fade-in-navbar 1.5s;
@@ -180,7 +180,7 @@ a:focus {
 }
 }
 
-h1.navbar-title {
+/*h1.navbar-title {
   font-size: 21px;
   height: 40px;
   white-space: nowrap;
@@ -192,10 +192,10 @@ h1.navbar-title {
   letter-spacing: 2px;
 }
 
-.navbar-fixed-top {
+.navbar-fixed-top NOT ADDED TO LESS{
   z-index: 1050;
 }
-
+*/
 
 
 /*Tabs*/
@@ -267,7 +267,7 @@ h1.navbar-title {
 
 /*Buttons */
 
-.btn-default {color:#666;}
+/*.btn-default {color:#666;}
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
@@ -286,7 +286,7 @@ a:hover.btn-default {
 .btn-default.active {
   text-shadow: #FFF 0px 1px 0px;
 }
-
+*/
 
 /* Forms
 =================================================================== */
@@ -672,13 +672,13 @@ input[type="radio"]:focus /* TO DO: Is this visible enough*/{
 
 /* Button
 =================================================================== */
-:focus {
+/*:focus {
   outline-color: rgba(0, 0, 0, 0.4);
 }
 
 .btn:focus,
 .btn:hover {
-  /*outline: thin dotted \9;*/
+  /*outline: thin dotted \9;
   outline: none;
 
   -webkit-box-shadow: 0em -0.2rem 0em rgba(0, 0, 0, 0.3) inset;
@@ -699,14 +699,14 @@ input[type="radio"]:focus /* TO DO: Is this visible enough*/{
     box-shadow: none;
     position: relative;
     top: 1px;
-}
+}*/
 
-.btn-link:focus,
+/*.btn-link:focus,
 .btn-link:hover {
   box-shadow: none;
 }
 
-.btn-default:hover,
+/*.btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
@@ -716,11 +716,11 @@ input[type="radio"]:focus /* TO DO: Is this visible enough*/{
   border-color: #adadad;
 }
 
-.btn-default:active,
+/.btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
   background-image: none;
-}
+}*/
 
 input[type="checkbox"]:focus {
   outline: thin solid rgba(0, 0, 0, 0.5);

@@ -39,8 +39,6 @@
 .icon-meeting:before,
 .icon-my-trips:before,
 .icon-rail:before,
-.icon-sabre-tn:before,
-.icon-sabre:before,
 .icon-search:before,
 .icon-seat-map:before,
 .icon-show:before,
@@ -81,10 +79,8 @@
 .icon-meeting:before { content: "\f114"; }
 .icon-my-trips:before { content: "\f115"; }
 .icon-rail:before { content: "\f116"; }
-.icon-sabre-tn:before { content: "\f117"; }
-.icon-sabre:before { content: "\f118"; }
-.icon-search:before { content: "\f119"; }
-.icon-seat-map:before { content: "\f11a"; }
-.icon-show:before { content: "\f11b"; }
-.icon-tools:before { content: "\f11c"; }
-.icon-weather:before { content: "\f11d"; }
+.icon-search:before { content: "\f117"; }
+.icon-seat-map:before { content: "\f118"; }
+.icon-show:before { content: "\f119"; }
+.icon-tools:before { content: "\f11a"; }
+.icon-weather:before { content: "\f11b"; }

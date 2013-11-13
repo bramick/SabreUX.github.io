@@ -1,0 +1,90 @@
+/*
+  Icon Font: font-travel
+*/
+
+@font-face {
+  font-family: "font-travel";
+  src: url("../fonts/font-travel.eot");
+  src: url("../fonts/font-travel.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/font-travel.woff") format("woff"),
+       url("../fonts/font-travel.ttf") format("truetype"),
+       url("../fonts/font-travel.svg#font-travel") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon-alternative-flight:before,
+.icon-attraction:before,
+.icon-book-hotel:before,
+.icon-bus:before,
+.icon-call:before,
+.icon-car:before,
+.icon-converters:before,
+.icon-cruise:before,
+.icon-currency-converters:before,
+.icon-dining:before,
+.icon-directions:before,
+.icon-expenses:before,
+.icon-ferry:before,
+.icon-flight:before,
+.icon-information:before,
+.icon-insurance:before,
+.icon-link:before,
+.icon-lodging:before,
+.icon-logout:before,
+.icon-map:before,
+.icon-meeting:before,
+.icon-my-trips:before,
+.icon-rail:before,
+.icon-sabre-tn:before,
+.icon-sabre:before,
+.icon-search:before,
+.icon-seat-map:before,
+.icon-show:before,
+.icon-tools:before,
+.icon-weather:before {
+  display: inline-block;
+  font-family: "font-travel";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-alternative-flight:before { content: "\f100"; }
+.icon-attraction:before { content: "\f101"; }
+.icon-book-hotel:before { content: "\f102"; }
+.icon-bus:before { content: "\f103"; }
+.icon-call:before { content: "\f104"; }
+.icon-car:before { content: "\f105"; }
+.icon-converters:before { content: "\f106"; }
+.icon-cruise:before { content: "\f107"; }
+.icon-currency-converters:before { content: "\f108"; }
+.icon-dining:before { content: "\f109"; }
+.icon-directions:before { content: "\f10a"; }
+.icon-expenses:before { content: "\f10b"; }
+.icon-ferry:before { content: "\f10c"; }
+.icon-flight:before { content: "\f10d"; }
+.icon-information:before { content: "\f10e"; }
+.icon-insurance:before { content: "\f10f"; }
+.icon-link:before { content: "\f110"; }
+.icon-lodging:before { content: "\f111"; }
+.icon-logout:before { content: "\f112"; }
+.icon-map:before { content: "\f113"; }
+.icon-meeting:before { content: "\f114"; }
+.icon-my-trips:before { content: "\f115"; }
+.icon-rail:before { content: "\f116"; }
+.icon-sabre-tn:before { content: "\f117"; }
+.icon-sabre:before { content: "\f118"; }
+.icon-search:before { content: "\f119"; }
+.icon-seat-map:before { content: "\f11a"; }
+.icon-show:before { content: "\f11b"; }
+.icon-tools:before { content: "\f11c"; }
+.icon-weather:before { content: "\f11d"; }

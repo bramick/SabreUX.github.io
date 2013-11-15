@@ -16,34 +16,61 @@
 [data-icon]:before { content: attr(data-icon); }
 
 [data-icon]:before,
-.icon-alternative-flight:before,
-.icon-attraction:before,
-.icon-book-hotel:before,
-.icon-bus:before,
-.icon-call:before,
-.icon-car:before,
-.icon-converters:before,
-.icon-cruise:before,
-.icon-currency-converters:before,
-.icon-dining:before,
-.icon-directions:before,
-.icon-expenses:before,
-.icon-ferry:before,
-.icon-flight:before,
-.icon-information:before,
-.icon-insurance:before,
-.icon-link:before,
-.icon-lodging:before,
-.icon-logout:before,
-.icon-map:before,
-.icon-meeting:before,
-.icon-my-trips:before,
-.icon-rail:before,
-.icon-search:before,
-.icon-seat-map:before,
-.icon-show:before,
-.icon-tools:before,
-.icon-weather:before {
+.ft-add:before,
+.ft-alert:before,
+.ft-alternative-flight:before,
+.ft-attraction:before,
+.ft-book-hotel:before,
+.ft-bus:before,
+.ft-calendar:before,
+.ft-call:before,
+.ft-car:before,
+.ft-chevron-right:before,
+.ft-combine:before,
+.ft-contact-provider:before,
+.ft-converters:before,
+.ft-cruise:before,
+.ft-currency:before,
+.ft-delete:before,
+.ft-dining:before,
+.ft-directions:before,
+.ft-document:before,
+.ft-edit:before,
+.ft-expenses:before,
+.ft-ferry:before,
+.ft-flight-alert:before,
+.ft-flight:before,
+.ft-import:before,
+.ft-information:before,
+.ft-insurance:before,
+.ft-itinerary:before,
+.ft-link:before,
+.ft-linked-booking:before,
+.ft-locked:before,
+.ft-lodging:before,
+.ft-logout:before,
+.ft-map:before,
+.ft-meeting:before,
+.ft-menu:before,
+.ft-message-icon:before,
+.ft-message:before,
+.ft-more:before,
+.ft-my-trips:before,
+.ft-passport:before,
+.ft-past-trips:before,
+.ft-print:before,
+.ft-profile:before,
+.ft-rail:before,
+.ft-refresh:before,
+.ft-search:before,
+.ft-seat-map:before,
+.ft-settings:before,
+.ft-share:before,
+.ft-show:before,
+.ft-tools:before,
+.ft-trip-feed:before,
+.ft-view-trip:before,
+.ft-weather:before {
   display: inline-block;
   font-family: "font-travel";
   font-style: normal;
@@ -56,31 +83,58 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.icon-alternative-flight:before { content: "\f100"; }
-.icon-attraction:before { content: "\f101"; }
-.icon-book-hotel:before { content: "\f102"; }
-.icon-bus:before { content: "\f103"; }
-.icon-call:before { content: "\f104"; }
-.icon-car:before { content: "\f105"; }
-.icon-converters:before { content: "\f106"; }
-.icon-cruise:before { content: "\f107"; }
-.icon-currency-converters:before { content: "\f108"; }
-.icon-dining:before { content: "\f109"; }
-.icon-directions:before { content: "\f10a"; }
-.icon-expenses:before { content: "\f10b"; }
-.icon-ferry:before { content: "\f10c"; }
-.icon-flight:before { content: "\f10d"; }
-.icon-information:before { content: "\f10e"; }
-.icon-insurance:before { content: "\f10f"; }
-.icon-link:before { content: "\f110"; }
-.icon-lodging:before { content: "\f111"; }
-.icon-logout:before { content: "\f112"; }
-.icon-map:before { content: "\f113"; }
-.icon-meeting:before { content: "\f114"; }
-.icon-my-trips:before { content: "\f115"; }
-.icon-rail:before { content: "\f116"; }
-.icon-search:before { content: "\f117"; }
-.icon-seat-map:before { content: "\f118"; }
-.icon-show:before { content: "\f119"; }
-.icon-tools:before { content: "\f11a"; }
-.icon-weather:before { content: "\f11b"; }
+.ft-add:before { content: "\f100"; }
+.ft-alert:before { content: "\f101"; }
+.ft-alternative-flight:before { content: "\f102"; }
+.ft-attraction:before { content: "\f103"; }
+.ft-book-hotel:before { content: "\f104"; }
+.ft-bus:before { content: "\f105"; }
+.ft-calendar:before { content: "\f106"; }
+.ft-call:before { content: "\f107"; }
+.ft-car:before { content: "\f108"; }
+.ft-chevron-right:before { content: "\f109"; }
+.ft-combine:before { content: "\f10a"; }
+.ft-contact-provider:before { content: "\f10b"; }
+.ft-converters:before { content: "\f10c"; }
+.ft-cruise:before { content: "\f10d"; }
+.ft-currency:before { content: "\f10e"; }
+.ft-delete:before { content: "\f10f"; }
+.ft-dining:before { content: "\f110"; }
+.ft-directions:before { content: "\f111"; }
+.ft-document:before { content: "\f112"; }
+.ft-edit:before { content: "\f113"; }
+.ft-expenses:before { content: "\f114"; }
+.ft-ferry:before { content: "\f115"; }
+.ft-flight-alert:before { content: "\f116"; }
+.ft-flight:before { content: "\f117"; }
+.ft-import:before { content: "\f118"; }
+.ft-information:before { content: "\f119"; }
+.ft-insurance:before { content: "\f11a"; }
+.ft-itinerary:before { content: "\f11b"; }
+.ft-link:before { content: "\f11c"; }
+.ft-linked-booking:before { content: "\f11d"; }
+.ft-locked:before { content: "\f11e"; }
+.ft-lodging:before { content: "\f11f"; }
+.ft-logout:before { content: "\f120"; }
+.ft-map:before { content: "\f121"; }
+.ft-meeting:before { content: "\f122"; }
+.ft-menu:before { content: "\f123"; }
+.ft-message-icon:before { content: "\f124"; }
+.ft-message:before { content: "\f125"; }
+.ft-more:before { content: "\f126"; }
+.ft-my-trips:before { content: "\f127"; }
+.ft-passport:before { content: "\f128"; }
+.ft-past-trips:before { content: "\f129"; }
+.ft-print:before { content: "\f12a"; }
+.ft-profile:before { content: "\f12b"; }
+.ft-rail:before { content: "\f12c"; }
+.ft-refresh:before { content: "\f12d"; }
+.ft-search:before { content: "\f12e"; }
+.ft-seat-map:before { content: "\f12f"; }
+.ft-settings:before { content: "\f130"; }
+.ft-share:before { content: "\f131"; }
+.ft-show:before { content: "\f132"; }
+.ft-tools:before { content: "\f133"; }
+.ft-trip-feed:before { content: "\f134"; }
+.ft-view-trip:before { content: "\f135"; }
+.ft-weather:before { content: "\f136"; }

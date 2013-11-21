@@ -35,6 +35,11 @@ h1 small.label {
 @import "../less/grid.less";
 @import "../less/tables.less";
 @import "../less/forms.less";
+
+.form-group {
+  margin-bottom: 10px;
+}
+
 @import "../less/buttons.less";
 
 // Base styles
@@ -136,10 +141,107 @@ h1 small.label {
 @import "../less/component-animations.less";
 @import "../less/glyphicons.less";
 @import "../less/dropdowns.less";
+.caret {
+  border-top-color:     @caret-width-base solid @dropdown-caret-color;
+  border-bottom-color:  @caret-width-base solid @dropdown-caret-color;
+
+}
+// Hover/Focus state
+.dropdown-menu > li > a {
+  &:hover,
+  &:focus {
+    text-shadow: #FFF 0px 1px 0px;
+  }
+}
+
+// Active state
+.dropdown-menu > .active > a {
+  &,
+  &:hover,
+  &:focus {
+    text-shadow: #FFF 0px 1px 0px;
+  }
+}
+
+
+// Dropdown section headers
+.dropdown-header {
+  font-weight: bold;
+}
+
+
 @import "../less/button-groups.less";
 @import "../less/input-groups.less";
-@import "../less/navs.less";
 
+@import "../less/navs.less";
+// Tabs
+// -------------------------
+.nav {
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: @nav-link-hover-bg;
+      border-color: @dropdown-border;
+
+      .caret {
+        border-top-color: @dropdown-caret-color;
+        border-bottom-color: @component-active-color;
+      }
+    }
+  }
+}
+
+.nav-tabs {
+  > li {
+    // Links rendered as pills
+    > a {
+      color:@nav-pills-active-link-hover-color;
+    }
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color:@btn-default-color;
+      }
+    }
+  }
+}
+
+
+// Pills
+// -------------------------
+.nav-pills {
+  > li {
+    // Links rendered as pills
+    > a {
+      color:@nav-pills-active-link-hover-color;
+      border:1px solid transparent;
+    }
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color:@btn-default-color;
+        background-color:transparent;
+        border:1px solid #ccc;
+      }
+    }
+  }
+}
+
+// Dropdowns
+// -------------------------
+.nav .caret {
+  border-top-color:     @dropdown-caret-color;
+  border-bottom-color:  @dropdown-caret-color;
+}
+.nav a:hover .caret {
+  border-top-color:     @component-active-color;
+  border-bottom-color:  @component-active-color;
+}
 
 @import "../less/navbar.less";
 // Navbars
@@ -164,6 +266,37 @@ h1 small.label {
 .navbar-default {
   .navbar-brand {
   color: @navbar-inverse-brand-hover-color;
+  }
+  .navbar-nav {
+    > li > a {
+      color: @btn-default-color;
+    }
+  }
+  .navbar-nav {
+    // Caret should match text color on hover
+    > .dropdown > a:hover .caret,
+    > .dropdown > a:focus .caret {
+      border-top-color:     @component-active-color;
+      border-bottom-color:  @component-active-color;
+    }
+
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-default-link-active-bg;
+        color: @navbar-default-link-active-color;
+        .caret {
+          border-top-color:     @component-active-color;
+          border-bottom-color:  @component-active-color;
+        }
+      }
+    }
+    > .dropdown > a .caret {
+      border-top-color:     @dropdown-caret-color;
+      border-bottom-color:  @dropdown-caret-color;
+    }
   }
 }
 .navbar-inverse {
@@ -199,7 +332,18 @@ h1.navbar-title {
 @import "../less/alerts.less";
 @import "../less/progress-bars.less";
 @import "../less/media.less";
+
 @import "../less/list-group.less";
+// radios when vertically stacked
+.input-group .radio {
+  &:first-child {
+    margin-top:0;
+  }
+  &:last-child {
+    margin-bottom:0
+  }
+}
+
 @import "../less/panels.less";
 @import "../less/wells.less";
 @import "../less/close.less";

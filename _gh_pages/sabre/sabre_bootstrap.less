@@ -26,7 +26,6 @@ a {
 h1 small.label { 
   font-size: 65%; 
 }
-
 .page-header {
   margin: 0 0 @line-height-computed;
 }
@@ -35,6 +34,126 @@ h1 small.label {
 @import "../less/grid.less";
 @import "../less/tables.less";
 @import "../less/forms.less";
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  .tab-focus(); //Update styling
+}
+input[type="file"]:focus {
+  border: 1px solid @input-border;
+  border-radius: @border-radius-base;
+}
+input[type="radio"] {
+  -webkit-border-radius:100%;
+  border-radius:100%;
+
+  &:focus /* TO DO: Is this visible enough*/{
+  -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(116, 133, 141, 0.8);
+     -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(116, 133, 141, 0.8);
+          box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(116, 133, 141, 0.8);
+  }
+}
+input[type="checkbox"]:focus {
+  outline: thin solid rgba(0, 0, 0, 0.5);
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.has-error .input-group input[type="text"].form-control:not(:first-child):not(:last-child) {
+  .border-left-radius(@border-radius-base)
+}
+
+
+
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: @padding-base-vertical 30px @padding-base-horizontal @padding-base-vertical;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @input-color;
+  vertical-align: middle;
+  background-color: @input-bg;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  border: 1px solid @input-border;
+  border-radius: @input-border-radius;
+  box-shadow: none;
+  .transition(~"border-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s");
+}
+
+// Form control feedback states
+//
+// Apply contextual and semantic states to individual form controls.
+
+// Warning
+.has-warning {
+  .form-control-validation(@text-color; @input-border; @state-warning-bg; @state-warning-box;); 
+}
+// Error
+.has-error {
+  .form-control-validation(@text-color; @input-border; @state-danger-bg; @state-error-box;); 
+}
+// Success
+.has-success {
+  .form-control-validation(@text-color; @input-border; @state-success-bg; @state-success-box;); 
+}
+.has-error .checkbox {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.has-error .radio {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.has-error .radio:first-child {
+  margin-bottom: 10px;
+}
+.has-error .radio:last-child {
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+.has-required [class^="text icon-"],
+.has-success [class^="text icon-"],
+.has-warning [class^="text icon-"],
+.has-error [class^="text icon-"] {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0em;
+  width: 2.6em;
+  height: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+.has-required [class^="text icon-"], 
+.has-required [class^="icon-"] {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 1.1em;
+  padding-right: 0.7em;
+}
+.has-success [class^="text icon-"],
+.has-success [class^="icon-"]{
+  font-size: 13px;
+  color: @state-success-box;
+  padding-top: 0.9em;
+}
+.has-warning [class^="text icon-"],
+.has-warning [class^="icon-"] {
+  font-size: 13px;
+  color: @state-warning-box;
+  padding-top: 0.9em;
+}
+.has-error [class^="text icon-"],
+.has-error [class^="icon-"]{
+  font-size: 22px;
+  color: @state-error-box;
+  padding-top: 0.2em;
+  width: 1.6em;
+  font-family: times, serif;
+}
 
 .form-group {
   margin-bottom: 10px;
@@ -172,6 +291,25 @@ h1 small.label {
 
 @import "../less/button-groups.less";
 @import "../less/input-groups.less";
+
+.form-group.has-success .input-group,
+.form-group.has-warning .input-group,
+.form-group.has-required .input-group,
+.form-group.has-error .input-group {
+  width: 100%;
+}
+
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-radius: @input-border-radius;
+}
+.input-group-addon:first-child {
+  border-radius: @input-border-radius;
+}
+
 
 @import "../less/navs.less";
 // Tabs
@@ -326,6 +464,23 @@ h1.navbar-title {
 @import "../less/pagination.less";
 @import "../less/pager.less";
 @import "../less/labels.less";
+.form-group.has-error > label {
+  margin-bottom: 0px;
+}
+.form-group.has-required label:first-child,
+.form-group.has-success label:first-child,
+.form-group.has-warning label:first-child,
+.form-group.has-error label:first-child {
+  width:100%
+}
+
+.form-group.has-required .input-group label:first-child,
+.form-group.has-success .input-group label:first-child,
+.form-group.has-warning .input-group label:first-child, 
+.form-group.has-error .input-group label:first-child {
+  width: auto;
+} 
+
 @import "../less/badges.less";
 @import "../less/jumbotron.less";
 @import "../less/thumbnails.less";
@@ -351,6 +506,28 @@ h1.navbar-title {
 // Components w/ JavaScript
 @import "../less/modals.less";
 @import "../less/tooltip.less";
+.tooltip-inner {
+  padding: 5px 10px;
+}
+.has-error .tooltip.fade.bottom.in {
+  top: 35px; 
+  left: 20px; 
+  display: block;
+}
+.has-error .tooltip.fade.right.in {
+  position: relative;
+  left: 0px;
+  top: -2px;
+  display: inline-block;
+}
+.has-error .tooltip-inner {
+  background-color: rgba(0, 0, 0, 1);
+  font-weight: normal;
+}
+.has-error .tooltip.bottom .tooltip-arrow {
+  border-bottom-color: rgba(0, 0, 0, 1);
+  left:10%;
+}
 @import "../less/popovers.less";
 @import "../less/carousel.less";
 

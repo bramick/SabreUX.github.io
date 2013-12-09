@@ -63,9 +63,6 @@ input[type="checkbox"]:focus {
   .border-left-radius(@border-radius-base)
 }
 
-
-
-
 .form-control {
   display: block;
   width: 100%;
@@ -114,10 +111,10 @@ input[type="checkbox"]:focus {
   margin-top: -5px;
   margin-bottom: 0;
 }
-.has-required [class^="text icon-"],
-.has-success [class^="text icon-"],
-.has-warning [class^="text icon-"],
-.has-error [class^="text icon-"] {
+.has-required [class^="text fa fa-"],
+.has-success [class^="text fa fa-"],
+.has-warning [class^="text fa fa-"],
+.has-error [class^="text fa fa-"] {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -127,34 +124,35 @@ input[type="checkbox"]:focus {
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
 }
-.has-required [class^="text icon-"], 
-.has-required [class^="icon-"] {
+.has-required [class^="text fa fa-"], 
+.has-required [class^="fa fa-"] {
   font-size: 10px;
   color: rgba(0, 0, 0, 0.5);
   padding-top: 1.1em;
   padding-right: 0.7em;
 }
-.has-success [class^="text icon-"],
-.has-success [class^="icon-"]{
+.has-success [class^="text fa fa-"],
+.has-success [class^="fa fa-"]{
   font-size: 13px;
   color: @state-success-box;
   padding-top: 0.9em;
 }
-.has-warning [class^="text icon-"],
-.has-warning [class^="icon-"] {
+.has-warning [class^="text fa fa-"],
+.has-warning [class^="fa fa-"] {
   font-size: 13px;
   color: @state-warning-box;
   padding-top: 0.9em;
 }
-.has-error [class^="text icon-"],
-.has-error [class^="icon-"]{
+.has-error [class^="text fa fa-"],
+.has-error [class^="fa fa-"]{
   font-size: 22px;
   color: @state-error-box;
   padding-top: 0.2em;
-  width: 1.6em;
   font-family: times, serif;
 }
-
+.has-error [class^="text fa fa-"]{
+  width: 1.6em;
+}
 .form-group {
   margin-bottom: 10px;
 }
@@ -485,6 +483,20 @@ h1.navbar-title {
 @import "../less/jumbotron.less";
 @import "../less/thumbnails.less";
 @import "../less/alerts.less";
+
+.alert-inverse.alert-success {
+  .alert-variant(@alert-inverse-success-bg; @alert-inverse-success-border; @alert-inverse-success-text);
+}
+.alert-inverse.alert-info {
+  .alert-variant(@alert-inverse-info-bg; @alert-inverse-info-border; @alert-inverse-info-text);
+}
+.alert-inverse.alert-warning {
+  .alert-variant(@alert-inverse-warning-bg; @alert-inverse-warning-border; @alert-inverse-warning-text);
+}
+.alert-inverse.alert-danger {
+  .alert-variant(@alert-inverse-danger-bg; @alert-inverse-danger-border; @alert-inverse-danger-text);
+}
+
 @import "../less/progress-bars.less";
 @import "../less/media.less";
 
@@ -502,6 +514,17 @@ h1.navbar-title {
 @import "../less/panels.less";
 @import "../less/wells.less";
 @import "../less/close.less";
+.alert-inverse [class^="close"] {
+  color: @close-inverse-color;
+  text-shadow: @close-inverse-text-shadow;
+  .opacity(.5);
+
+  &:hover,
+  &:focus {
+    color: @close-inverse-color;
+    .opacity(.8);
+  }
+}
 
 // Components w/ JavaScript
 @import "../less/modals.less";

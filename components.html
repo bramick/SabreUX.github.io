@@ -5,46 +5,7 @@ slug: components
 lead: "Over a dozen reusable components built to provide iconography, dropdowns, navigation, alerts, popovers, and much more."
 base_url: "../"
 ---
-<style>
-  .bs-header {
-    display: none;
-  }
 
-  .test-block .ft {
-    margin-right: 4px;
-  }
-
-  #font-travel {
-    margin-bottom: 40px;
-  }
-  .font-travel-icon-list .ft-hover a {
-    display: block;
-    color: #222;
-    line-height: 32px;
-    height: 32px;
-    padding-left: 10px;
-    border-radius: 4px;
-  }
-  .font-travel-icon-list .ft-hover a .ft {
-    width: 32px;
-    font-size: 14px;
-    display: inline-block;
-    text-align: right;
-    margin-right: 10px;
-  }
-
-  .font-travel-icon-list .ft-hover a:hover {
-    background-color: #3276b1;
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .font-travel-icon-list .ft-hover a:hover .ft {
-    font-size: 24px;
-    vertical-align: -4px;
-  }
-</style>
-<link rel="stylesheet" href="../dist/css/font-travel.css">
   <!-- Font Awesome
   ================================================== -->
   <div class="bs-docs-section">
@@ -61,214 +22,44 @@ base_url: "../"
     <div class="bs-example">
       <div class="btn-toolbar">
         <div class="btn-group">
-          <button type="button" class="btn btn-default"><i class="icon-align-left"></i></button>
-          <button type="button" class="btn btn-default"><i class="icon-align-center"></i></button>
-          <button type="button" class="btn btn-default"><i class="icon-align-right"></i></button>
-          <button type="button" class="btn btn-default"><i class="icon-align-justify"></i></button>
+          <button type="button" class="btn btn-default"><i class="fa fa-align-left"></i></button>
+          <button type="button" class="btn btn-default"><i class="fa fa-align-center"></i></button>
+          <button type="button" class="btn btn-default"><i class="fa fa-align-right"></i></button>
+          <button type="button" class="btn btn-default"><i class="fa fa-align-justify"></i></button>
         </div>
       </div>
       <div class="btn-toolbar">
-        <button type="button" class="btn btn-default btn-lg"><i class="icon-star"></i> Star</button>
-        <button type="button" class="btn btn-default"><i class="icon-star"></i> Star</button>
-        <button type="button" class="btn btn-default btn-sm"><i class="icon-star"></i> Star</button>
-        <button type="button" class="btn btn-default btn-xs"><i class="icon-star"></i> Star</button>
+        <button type="button" class="btn btn-default btn-lg"><i class="fa fa-star"></i> Star</button>
+        <button type="button" class="btn btn-default"><i class="fa fa-star"></i> Star</button>
+        <button type="button" class="btn btn-default btn-sm"><i class="fa fa-star"></i> Star</button>
+        <button type="button" class="btn btn-default btn-xs"><i class="fa fa-star"></i> Star</button>
       </div>                  
     </div>
-    {% highlight html %}
-    <div class="btn-toolbar">
-      <div class="btn-group">
-        <button type="button" class="btn btn-default">
-          <i class="icon-align-left"></i>
-        </button>
-        <button type="button" class="btn btn-default">
-          <i class="icon-align-center"></i>
-        </button>
-        <button type="button" class="btn btn-default">
-          <i class="icon-align-right"></i>
-        </button>
-        <button type="button" class="btn btn-default">
-          <i class="icon-align-justify"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="btn-toolbar">
-      <button type="button" class="btn btn-default btn-lg">
-        <i class="icon-star"></i> Star
-      </button>
-    </div>
-    {% endhighlight %}
-  </div>
-
-  <!-- Font Travel
-    ================================================== -->
-<div class="bs-docs-section">
-  <div class="page-header">
-    <h1 id="fontawesome">Font Travel <small class="label label-default">Non-core</small></h1>
-  </div>
-  <h2 id="font-travel-icons">Available Icons</h2>
-  <div class="row font-travel-icon-list">
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-add ft"></i> ft-add</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-alert ft"></i> ft-alert</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-alternative-flight ft"></i> ft-alternative-flight</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-attraction ft"></i> ft-attraction</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-book-hotel ft"></i> ft-book-hotel</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-bus ft"></i> ft-bus</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-calendar ft"></i> ft-calendar</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-call ft"></i> ft-call</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-car ft"></i> ft-car</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-chevron-right ft"></i> ft-chevron-right</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-combine ft"></i> ft-combine</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-contact-provider ft"></i> ft-contact-provider</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-converters ft"></i> ft-converters</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-cruise ft"></i> ft-cruise</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-currency ft"></i> ft-currency</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-delete ft"></i> ft-delete</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-dining ft"></i> ft-dining</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-directions ft"></i> ft-directions</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-document ft"></i> ft-document</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-edit ft"></i> ft-edit</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-expenses ft"></i> ft-expenses</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-ferry ft"></i> ft-ferry</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-flight-alert ft"></i> ft-flight-alert</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-flight ft"></i> ft-flight</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-import ft"></i> ft-import</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-information ft"></i> ft-information</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-insurance ft"></i> ft-insurance</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-itinerary ft"></i> ft-itinerary</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-link ft"></i> ft-link</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-linked-booking ft"></i> ft-linked-booking</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-locked ft"></i> ft-locked</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-lodging ft"></i> ft-lodging</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-logout ft"></i> ft-logout</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-map ft"></i> ft-map</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-meeting ft"></i> ft-meeting</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-menu ft"></i> ft-menu</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-message-icon ft"></i> ft-message-icon</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-message ft"></i> ft-message</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-more ft"></i> ft-more</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-my-trips ft"></i> ft-my-trips</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-passport ft"></i> ft-passport</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-past-trips ft"></i> ft-past-trips</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-print ft"></i> ft-print</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-profile ft"></i> ft-profile</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-rail ft"></i> ft-rail</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-refresh ft"></i> ft-refresh</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-search ft"></i> ft-search</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-seat-map ft"></i> ft-seat-map</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-settings ft"></i> ft-settings</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-share ft"></i> ft-share</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-show ft"></i> ft-show</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-tools ft"></i> ft-tools</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-trip-feed ft"></i> ft-trip-feed</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-view-trip ft"></i> ft-view-trip</a></div>
-
-    <div class="ft-hover col-md-3 col-sm-4"><a href="#"><i class="ft-weather ft"></i> ft-weather</a></div>
-
-  </div>
-
-  <h2 id="fontawesome-getting-started">Getting Started</h2>
-  <p>Setting up can be as simple as adding two lines of code to your website, or you can be a pro and customize the LESS!</p>
-  <p><a class="btn btn-lg btn-primary" href="http://fortawesome.github.io/Font-Awesome/get-started/">Get Started</a></p>
-
-  <h2 id="fontawesome-examples">Examples</h2>
-  <p>Place Font Awesome icons just about anywhere with the <span class="highlight fa"><code class="fontawesome-code">&lt;i&gt;</code></span> tag.</p>
-  <div class="bs-example">
-    <div class="btn-toolbar">
-      <div class="btn-group">
-        <button type="button" class="btn btn-default"><i class="icon-align-left"></i></button>
-        <button type="button" class="btn btn-default"><i class="icon-align-center"></i></button>
-        <button type="button" class="btn btn-default"><i class="icon-align-right"></i></button>
-        <button type="button" class="btn btn-default"><i class="icon-align-justify"></i></button>
-      </div>
-    </div>
-    <div class="btn-toolbar">
-      <button type="button" class="btn btn-default btn-lg"><i class="icon-star"></i> Star</button>
-      <button type="button" class="btn btn-default"><i class="icon-star"></i> Star</button>
-      <button type="button" class="btn btn-default btn-sm"><i class="icon-star"></i> Star</button>
-      <button type="button" class="btn btn-default btn-xs"><i class="icon-star"></i> Star</button>
-    </div>
-  </div>
-  {% highlight html %}
-  <div class="btn-toolbar">
-    <div class="btn-group">
-      <button type="button" class="btn btn-default">
-        <i class="icon-align-left"></i>
-      </button>
-      <button type="button" class="btn btn-default">
-        <i class="icon-align-center"></i>
-      </button>
-      <button type="button" class="btn btn-default">
-        <i class="icon-align-right"></i>
-      </button>
-      <button type="button" class="btn btn-default">
-        <i class="icon-align-justify"></i>
-      </button>
-    </div>
-  </div>
-
-  <div class="btn-toolbar">
-    <button type="button" class="btn btn-default btn-lg">
-      <i class="icon-star"></i> Star
+{% highlight html %}
+<div class="btn-toolbar">
+  <div class="btn-group">
+    <button type="button" class="btn btn-default">
+      <i class="fa fa-align-left"></i>
+    </button>
+    <button type="button" class="btn btn-default">
+      <i class="fa fa-align-center"></i>
+    </button>
+    <button type="button" class="btn btn-default">
+      <i class="fa fa-align-right"></i>
+    </button>
+    <button type="button" class="btn btn-default">
+      <i class="fa fa-align-justify"></i>
     </button>
   </div>
-  {% endhighlight %}
 </div>
 
+<div class="btn-toolbar">
+  <button type="button" class="btn btn-default btn-lg">
+    <i class="fa fa-star"></i> Star
+  </button>
+</div>                  
+{% endhighlight %}
+  </div>
 
   <!-- Glyphicons
   ================================================== -->
@@ -2527,6 +2318,7 @@ body { padding-bottom: 70px; }
 
     <div class="bs-example">
       <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <strong>Well done!</strong> You successfully read this important alert message.
       </div>
       <div class="alert alert-info">
@@ -2539,11 +2331,40 @@ body { padding-bottom: 70px; }
         <strong>Oh snap!</strong> Change a few things up and try submitting again.
       </div>
     </div>
+
 {% highlight html %}
 <div class="alert alert-success">...</div>
 <div class="alert alert-info">...</div>
 <div class="alert alert-warning">...</div>
 <div class="alert alert-danger">...</div>
+{% endhighlight %}
+
+    <h2 id="alerts-dismissable">Inverse alerts</h2>
+    <p>Build on any alert by adding an inverse <code>.alert-inverse</code> when on a dark background.</p>
+    <div class="bs-inverse bs-example">
+      <div class="alert alert-inverse alert-success">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Well done!</strong> You successfully read this important alert message.
+      </div>
+      <div class="alert alert-inverse alert-info">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+      </div>
+      <div class="alert alert-inverse alert-warning">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Warning!</strong> Best check yo self, you're not looking too good.
+      </div>
+      <div class="alert alert-inverse alert-danger">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
+    </div>
+
+{% highlight html %}
+<div class="alert alert-inverse alert-success">...</div>
+<div class="alert alert-inverse alert-info">...</div>
+<div class="alert alert-inverse alert-warning">...</div>
+<div class="alert alert-inverse alert-danger">...</div>
 {% endhighlight %}
 
     <h2 id="alerts-dismissable">Dismissable alerts</h2>

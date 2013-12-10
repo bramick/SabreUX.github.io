@@ -378,18 +378,22 @@
 @state-success-text:             #468847;
 @state-success-bg:               #dff0d8;
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+@state-inverse-success-border:	 darken(spin(@state-success-bg, +10), 60%);
 
 @state-info-text:                #3a87ad;
 @state-info-bg:                  #d9edf7;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+@state-inverse-info-border:	 	 darken(spin(@state-info-bg, +10), 50%);
 
 @state-warning-text:             #c09853;
 @state-warning-bg:               #fcf8e3;
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+@state-inverse-warning-border:	 darken(spin(@state-warning-bg, +10), 65%);
 
 @state-danger-text:              #b94a48;
 @state-danger-bg:                #f2dede;
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+@state-inverse-danger-border:    darken(spin(@state-danger-bg, +10), 60%);
 
 @state-success-box:				 rgba(92, 184, 92, 1);
 @state-error-box:				 rgba(217, 83, 79, 1);
@@ -463,17 +467,33 @@
 @alert-success-text:          @state-success-text;
 @alert-success-border:        @state-success-border;
 
+@alert-inverse-success-bg:		@state-success-text;
+@alert-inverse-success-text:	@state-success-bg;
+@alert-inverse-success-border:	@state-inverse-success-border;
+
 @alert-info-bg:               @state-info-bg;
 @alert-info-text:             @state-info-text;
 @alert-info-border:           @state-info-border;
+
+@alert-inverse-info-bg:			@state-info-text;
+@alert-inverse-info-text:		@state-info-bg;
+@alert-inverse-info-border:		@state-inverse-info-border;
 
 @alert-warning-bg:            @state-warning-bg;
 @alert-warning-text:          @state-warning-text;
 @alert-warning-border:        @state-warning-border;
 
+@alert-inverse-warning-bg:		@state-warning-text;
+@alert-inverse-warning-text:	@state-warning-bg;
+@alert-inverse-warning-border:	@state-inverse-warning-border;
+
 @alert-danger-bg:             @state-danger-bg;
 @alert-danger-text:           @state-danger-text;
 @alert-danger-border:         @state-danger-border;
+
+@alert-inverse-danger-bg:		@state-danger-text;
+@alert-inverse-danger-text:		@state-danger-bg;
+@alert-inverse-danger-border:	@state-inverse-danger-border;
 
 
 // Progress bars
@@ -594,6 +614,8 @@
 @close-font-weight:           bold;
 @close-color:                 #000;
 @close-text-shadow:           0 1px 0 #fff;
+@close-inverse-color:         #fff;
+@close-inverse-text-shadow:   0 1px 0 #000;
 
 
 // Code

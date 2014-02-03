@@ -742,14 +742,19 @@
 // Example usage: change the default blue border and shadow to white for better
 // contrast against a dark gray background.
 
+.form-border-focus() {
+  border-color: rgba(0, 0, 0, 0.4);
+  outline: 0;
+  .box-shadow(~"inset 2px 0 0 0 rgba(0,0,0,.4)");
+}
+
 .form-control-focus(@color: @input-border-focus) {
   @color-rgba: rgba(red(@color), green(@color), blue(@color), .6);
   &:focus {
-    border-color: rgba(0, 0, 0, 0.4);
-    outline: 0;
-    .box-shadow(~"inset 2px 0 0 0 rgba(0,0,0,.4)");
+    .form-border-focus()
   }
 }
+
 
 // Form control sizing
 //

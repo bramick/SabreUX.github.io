@@ -82,7 +82,7 @@ input[type="checkbox"]:focus {
   display: block;
   width: 100%;
   height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  padding: @padding-base-vertical 30px @padding-base-horizontal @padding-base-vertical;
+  padding: @padding-base-vertical 30px @padding-base-vertical @padding-base-vertical;
   font-size: @font-size-base;
   line-height: @line-height-base;
   color: @input-color;
@@ -177,7 +177,7 @@ input[type="checkbox"]:focus {
 // Base styles
 // --------------------------------------------------
 .btn {
-  padding: @padding-base-vertical @padding-base-horizontal @padding-base-vertical + 1;
+  padding: @padding-base-vertical + 3;
   line-height: 1em;
   border-radius: @border-radius-base;
   .box-shadow(@shadow: inset 0em -0.2rem 0em rgba(0,0,0,0.1));
@@ -209,6 +209,7 @@ input[type="checkbox"]:focus {
     top: 1px;
   }
 }
+
 
 // Alternate buttons
 // --------------------------------------------------
@@ -264,6 +265,15 @@ input[type="checkbox"]:focus {
 
 // Button Sizes
 // --------------------------------------------------
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-large-vertical; @padding-large-horizontal; @font-size-large; @line-height-large; @border-radius-large);
+}
+.btn-sm,
+.btn-xs {
+  // line-height: ensure proper height of button next to small input
+  .button-size(@padding-small-vertical; @padding-small-horizontal; @font-size-small; @line-height-small; @border-radius-small);
+}
 .btn-sm,
 .btn-xs {
   line-height: @line-height-large;
@@ -409,7 +419,6 @@ input[type="checkbox"]:focus {
 }
 
 @import "../less/navbar.less";
-/* end of navbar.less */
 
 // Navbars
 // --------------------------------------------------
@@ -488,6 +497,8 @@ h1.navbar-title {
   margin-left: 18px;
   letter-spacing: 2px;
 }
+
+/* end of navbar.less */
 
 @import "../less/breadcrumbs.less";
 /* end of breadcrumbs.less */
@@ -630,6 +641,24 @@ h1.navbar-title {
 
 
 // Sabre Custom CSS
-//@import "../sabre.css";
+/*select2.css overrides */
+.select2-container .select2-choice .select2-arrow {
+  border-left: none;
+  background: none;
+  background-image: none;
+}
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices {
+    /* border: 1px solid #5897fb; */
+    outline: none;
+
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+/* end of select2.css overrides*/
+
+
+
 /* end of sabre.less */
 

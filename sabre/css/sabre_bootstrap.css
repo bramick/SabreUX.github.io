@@ -1879,18 +1879,8 @@ input[type="checkbox"]:focus {
   border-top-left-radius: 4px;
 }
 .form-control {
-  display: block;
-  width: 100%;
-  height: 34px;
   padding: 6px 30px 6px 6px;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #555555;
   vertical-align: middle;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
   box-shadow: none;
   -webkit-transition: border-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
   transition: border-color ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
@@ -6518,13 +6508,48 @@ td.visible-print {
   background: none;
   background-image: none;
 }
-.select2-container-active .select2-choice,
-.select2-container-active .select2-choices {
-  /* border: 1px solid #5897fb; */
+/*.select2-drop-active {
+    border: 1px solid #5897fb;
+    border-top: none;
+}
 
-  outline: none;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+.select2-drop.select2-drop-above.select2-drop-active {
+    border-top: 1px solid #5897fb;
+}*/
+.select2-drop-active,
+.select2-drop.select2-drop-above.select2-drop-active,
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices,
+.select2-container-multi.select2-container-active .select2-choices,
+.select2-container-active.select2-dropdown-open {
+  border-color: rgba(0, 0, 0, 0.4);
+  outline: 0;
+  -webkit-box-shadow: inset 2px 0 0 0 rgba(0,0,0,.4);
+  box-shadow: inset 2px 0 0 0 rgba(0,0,0,.4);
+}
+.select2-container-active.select2-dropdown-open,
+.select2-container-active.select2-dropdown-open .select2-choice,
+.select2-container-active.select2-dropdown-open .select2-choices,
+.select2-drop-active {
+  -webkit-box-shadow: inset 0 0 0 0 rgba(0,0,0,.4);
+  box-shadow: inset 0 0 0 0 rgba(0,0,0,.4);
+}
+.select2-container-multi .select2-choices {
+  height: auto !important;
+  height: 1%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: text;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: none;
+}
+.select2-dropdown-open .select2-choices {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 /* end of select2.css overrides*/
 /* end of sabre.less */

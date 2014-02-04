@@ -6683,6 +6683,15 @@ abbr.select2-search-choice-close {
   padding: 3px 20px;
   font-size: 14px;
 }
+.select2-search {
+  z-index: 1000;
+}
+.select2-drop {
+  z-index: 999;
+}
+.select2-drop-mask {
+  z-index: 998;
+}
 /* new */
 .select2-results .select2-highlighted {
   -webkit-transition: 0.3s;

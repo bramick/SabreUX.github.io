@@ -2405,7 +2405,7 @@ input[type="button"].btn-block {
   border-color: #adadad;
 }
 .btn-primary {
-  color: #FFF;
+  color: #ffffff;
   background-color: #0066B5;
 }
 .btn-primary:hover,
@@ -6501,7 +6501,6 @@ td.visible-print {
   }
 }
 /* end of responsive-utilities.less */
-/*select2.css overrides */
 .select2-container .select2-choice {
   height: 34px;
   padding: 6px 30px 6px 6px;
@@ -6600,21 +6599,21 @@ td.visible-print {
   left: 0;
 }
 .select2-search-choice-close {
+  display: inline-block;
+  left: 0;
   width: 18px;
   height: 18px;
   position: absolute;
   top: 0;
-  left: 0;
   font-size: 12px;
   outline: none;
-  background: none;
+  background: none !important;
   background-image: none !important;
   padding: 2px 4px 4px 3px;
   margin-top: 4px;
   margin-left: 6px;
   cursor: pointer;
   color: #666666;
-  display: inline-block;
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -6632,9 +6631,85 @@ td.visible-print {
 .select2-search-choice-close:before {
   content: "\f00d";
 }
+.select2-container .select2-choice abbr {
+  display: none;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+  outline: none;
+  background: none !important;
+  background-image: none !important;
+  margin-top: 9px;
+  margin-right: 23px;
+  color: #666666;
+  text-decoration: none;
+  cursor: pointer;
+}
+.select2-container .select2-choice abbr:hover,
+.select2-container .select2-choice abbr:focus,
+.select2-container .select2-choice abbr:active,
+.select2-container .select2-choice abbr.active {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+abbr.select2-search-choice-close {
+  left: auto;
+  content: "\f00d";
+}
+.select2-drop {
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+}
+.select2-results .select2-highlighted {
+  text-shadow: #ffffff 0px 1px 0px;
+  text-decoration: none;
+  color: #666666;
+  background-color: #e9e9e9;
+}
+.select2-results .select2-result-unselectable .select2-result-label {
+  cursor: auto;
+  padding: 4px 4px 4px 7px;
+  font-size: 12px;
+  line-height: 1.428571429;
+  color: #333333;
+}
+.select2-results .select2-result-selectable .select2-result-label {
+  cursor: pointer;
+  padding: 3px 20px;
+  font-size: 14px;
+}
 /* new */
+.select2-results .select2-highlighted {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.select2-results .select2-highlighted:hover,
+.select2-results .select2-highlighted:focus {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.select2-results .select2-highlighted:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.select2-choices,
 .select2-container {
   height: 34px;
+  width: 100%;
+}
+.select2-container.form-control {
+  padding: 0;
+  border: none;
+}
+ul.select2-choices.form-control {
+  padding: 0;
+  border-left: none;
 }
 /* end of select2.css overrides*/
 /* end of sabre.less */

@@ -24,6 +24,18 @@
  * ======================================================================== */
 
 
+/*select2.js http://ivaynberg.github.io/select2/ */
+$("#selectex1").select2({
+    placeholder: "Select a State",
+    allowClear: true
+});
+$("#selectex2").select2({
+    placeholder: "Select Multiple States",
+});
+$("#selectex3").select2({
+    placeholder: "Select Multiple States",
+});
+
 /* smoothscroll.js*/
 $('a[href*=#]:not([href=#],[data-toggle=modal])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -39,8 +51,3 @@ $('a[href*=#]:not([href=#],[data-toggle=modal])').click(function() {
         }
     }
 });
-
-/*select2.js http://ivaynberg.github.io/select2/ */
-$("#selectex1").select2();
-$("#selectex2").select2();
-$("#selectex3").select2();

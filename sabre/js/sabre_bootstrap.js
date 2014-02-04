@@ -24,6 +24,7 @@
  * ======================================================================== */
 
 
+/* smoothscroll.js*/
 $('a[href*=#]:not([href=#],[data-toggle=modal])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
         || location.hostname == this.hostname) {
@@ -38,3 +39,8 @@ $('a[href*=#]:not([href=#],[data-toggle=modal])').click(function() {
         }
     }
 });
+
+/*select2.js http://ivaynberg.github.io/select2/ */
+$("#selectex1").select2();
+$("#selectex2").select2();
+$("#selectex3").select2();
